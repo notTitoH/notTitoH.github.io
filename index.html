@@ -5,25 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/pico.min.css">
     <style>
-       .parent {
-         display: grid;
-         grid-template-columns: repeat(5, 1fr);
-         grid-template-rows: repeat(5, 1fr);
-         grid-column-gap: 0px;
-         grid-row-gap: 0px;
-      }
-      .div1 { grid-area: 1 / 1 / 2 / 2; }
-      .div2 { grid-area: 1 / 2 / 2 / 4; }
+	.gridcontainer {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: 1fr;	
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	}
+
+	.div1 { grid-area: 1 / 1 / 2 / 4; }
+	.div2 { grid-area: 1 / 4 / 2 / 11; }
+
+
     </style>
-    <title>Hello, world!</title>
+    <title>Hello, I'm @notTitoH</title>
   </head>
   <body>
-    <main class="container" style="border: 1px solid #F00;">
-      <h1>Hello, world!</h1>
-      <div class="parent">
-        <div class="div1" style="border: 1px solid #F00;">div 1</div>
-        <div class="div2" style="border: 1px solid #F0F;">div 2 </div>
-      </div>
+    <main class="container">
+    	<article>
+		<nav aria-label="breadcrumb">
+		  <ul>
+		    <li><a href="#"> Home</a></li>
+		    <li><a href="#">Category</a></li>
+		    <li>Page</li>
+		  </ul>
+		</nav>
+	      <div class="gridcontainer">
+		<div class="div1">
+			<ul>
+				<li>test</li>
+			</ul>
+		</div>
+
+		<div class="div2">
+			div 2 a
+		</div>
+	      </div>
+	      
+	</article>
     </main>
   </body>
 </html>

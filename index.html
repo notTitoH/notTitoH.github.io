@@ -12,35 +12,44 @@
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	}
-
 	.div1 { grid-area: 1 / 1 / 2 / 4; }
-	.div2 { grid-area: 1 / 4 / 2 / 11; }
-
-
+	.div2 { grid-area: 1 / 4 / 2 / 11;}
     </style>
     <title>I'm @notTitoH</title>
   </head>
   <body>
     <main class="container">
-    	<article>
-		<nav aria-label="breadcrumb">
-		  <ul>
-		    <li><a href="#"> Home</a></li>
-		    <li><a href="#">Category</a></li>
-		  </ul>
-		</nav>
-	      <div class="gridcontainer">
-		<div class="div1">
+    	<article >
+		<header>
+		<nav > <!--aria-label="breadcrumb"-->
 			<ul>
-				<li>test</li>
+				<li><a href="#" class="secondary">home</a></li>
+				<li><a href="#" class="secondary">whoami</a></li>
 			</ul>
+			<ul>
+				<li><strong>hello</strong></li>
+			</ul>
+		</nav>
+		</header>
+		<div class="gridcontainer">
+			<div class="div1">
+				<aside>
+					<nav>
+					<ul>
+						<li><a href="#">link 1</a></li>
+						<li><a href="#">link 2</a></li>
+						<li><a href="#">Linkedin</a></li>
+					</ul>
+					</nav>
+				</aside>
+			</div>
+
+			<div class="div2">
+				Lorem Ipsum.
+			</div>
 		</div>
 
-		<div class="div2">
-			Lorem Ipsum.
-		</div>
-	      </div>
-	      
+		<!-- <footer class="code">wut</footer>-->
 	</article>
     </main>
   </body>
